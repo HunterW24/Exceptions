@@ -15,7 +15,7 @@ namespace Exceptions_Wixson_Hunter
 
             //Create a Random object to generate random numbers
             Random rand = new Random();
-            // Get a random number between 2,29 (exclusive)
+            // Get a random number between 2,30
             int myInt = rand.Next(2, 30);
 
             // Try block to handle potential exceptions
@@ -36,7 +36,7 @@ namespace Exceptions_Wixson_Hunter
                 try  // Inner try block to handle another potential exception
                 {
                     // Read the user input again and convert it to a float
-                    myOtherFloat = (float)Convert.ToDouble(Console.ReadLine());
+                   // myOtherFloat = (float)Convert.ToDouble(Console.ReadLine());
                     // Call the Divide function again with the new value from the user
                     result = Divide(myFloat, myOtherFloat);
                 }
